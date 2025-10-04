@@ -56,7 +56,7 @@ body {
 }
 
 .logo-elements {
-    gap:3rem;
+    gap:2rem;
     display: flex;
     align-items: center;
 }
@@ -129,7 +129,7 @@ body {
         font-size: 3.5rem;
         color: var(--black-color);
         font-weight: 600;
-        font-family: 'Gill Sans'
+        font-family: 'Gill Sans';
     }
     #menu-icon {
         display:block;
