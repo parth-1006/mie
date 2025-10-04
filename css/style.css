@@ -102,17 +102,18 @@ body {
     }
 
     .navbar {
-        position: absolute;
-        top:120%;
+        position: absolute ;
+        top: 110%;
         left:-110%;
-        width: 100%;
+        width: 50%;
+        height: 80vh;
         padding: 1rem 4%;
         background: var(--main-color);
         box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
         transition: .25s ease;
         transition-delay: .25s;
         border:.2rem solid #000000;
-        border-radius: 4rem;
+        border-radius: 1rem;
     }
 
     .navbar.active {
