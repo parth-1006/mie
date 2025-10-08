@@ -297,9 +297,30 @@ body {
     display: flex;
     justify-content: center;
 }
+.content-2 .temp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.content-2 .btn-box {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+
 /*--------------------home-global-end---------------------*/
 
 /*-----------------registration-global--------------------*/
+ .registration {
+    min-width: 100vw;
+    min-height: 100vh;
+    margin-top: 12rem;
+ }
+
 /*---------------registration-global-end------------------*/
 
 /*------------------about-global--------------------------*/
@@ -364,30 +385,16 @@ body {
     text-align: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*-----------------about-global-end-----------------------*/
+
+/*-------------------contact-global-----------------------*/
+.contact {
+    min-width: 100vw;
+    min-height: 100vh;
+    margin-top: 12rem;
+}
+
+/*------------------contact-global-end--------------------*/
 
 /*--------------------footer-global-----------------------*/
 .footer {
@@ -408,9 +415,10 @@ body {
 }
 .footer .footer-text .name {
     font-weight: 620;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 .footer-text .address {
+    display: none;
     font-size: 2rem;
     font-weight: 500;
 }
