@@ -30,10 +30,98 @@
     </header>
 
     <section class="registration" id="registration">
+
         <div class="sec-content-1">
-            <div class="test">
-                
+            <h1 class="head">Register Here!</h1>
+            <h2 class="info">Register for more updates.</h2>
+        </div>
+
+        <div class="sec-content-2">
+        <form action='https://script.google.com/macros/s/AKfycbxRbGlNhY4QiXPr-N2p84Syqt2d8b9G-Y9xDFKpX28T8gPm9AMgX4MKae3eYXbw9hKj0A/exec' method="POST" name="submit-to-google-sheet">
+
+            <h1 class="head-2">*Name:</h1>
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" name="firstname" placeholder="First Name" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" name="middlename" placeholder="Middle Name" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" name="lastname" placeholder="Last Name" required>
+                    <span class="focus"></span>
+                </div>
             </div>
+
+            <h1 class="head-2">*Date of Birth & *Age:</h1>
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="date" name="dateofbirth" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="number" name="age" placeholder="Age" required>
+                    <span class="focus"></span>
+                </div>
+            </div>
+
+            <h1 class="head-2">Contact Details:</h1>
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="number" name="number" placeholder="Contact Number" required>
+                    <span class="focus"></span>
+                </div>
+            </div>
+
+            <h1 class="head-2">Education & Experience:</h1>
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" name="education" placeholder="Education" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" name="experience" placeholder="Work Experience (if any)">
+                    <span class="focus"></span>
+                </div>
+            </div>
+
+            <h1 class="head-2">Address & Location:</h1>
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" name="address" placeholder="Address" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <select name="state" id="state" required>
+                    <option value="" disabled selected>Select State</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    </select>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <select name="district" id="district">
+                    <option value="" disabled selected>Select District</option>
+                    </select>
+                    <span class="focus"></span>
+                </div>
+            </div>
+
+            <h1 class="head-2">Other Skills:</h1>
+            <div class="textarea-field">
+                    <textarea name="message" cols="30" rows="10" placeholder="Other Skills (if any)"></textarea>
+                    <span class="focus"></span>
+            </div>
+
+            <div class="btn-box btns">
+                <button type="submit" class="btn">Submit</button>
+            </div>
+        </form>
         </div>
     </section>
 
