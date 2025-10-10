@@ -36,3 +36,27 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxRbGlNhY4QiXPr-N2p84Syqt2d8b9G-Y9xDFKpX28T8gPm9AMgX4MKae3eYXbw9hKj0A/exec'; // <-- paste your Google Apps Script URL here
+const form = document.forms['submit-to-google-sheet'];
+
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  const formData = new FormData(form);
+  const data = Object.fromEntries(formData.entries());
+
+  fetch(scriptURL, {
+    method: 'POST',
+    body: JSON.stringify(data),
+    headers: { 'Content-Type': 'application/json' },
+  })
+  .then(response => {
+    alert("✅ Form submitted successfully!");
+    form.reset();
+  })
+  .catch(error => {
+    alert("❌ Error! Please try again.");
+    console.error('Error:', error);
+  });
+});
