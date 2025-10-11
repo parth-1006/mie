@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbxRbGlNhY4QiXPr-N2p84Syqt2d8b9G-Y9xDFKpX28T8gPm9AMgX4MKae3eYXbw9hKj0A/exec'; // <-- paste your Google Apps Script URL here
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxRbGlNhY4QiXPr-N2p84Syqt2d8b9G-Y9xDFKpX28T8gPm9AMgX4MKae3eYXbw9hKj0A/exec';
 const form = document.forms['submit-to-google-sheet'];
 
 form.addEventListener('submit', e => {
